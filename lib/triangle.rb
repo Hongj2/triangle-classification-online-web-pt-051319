@@ -1,20 +1,16 @@
 class Triangle
   attr_accessor :side1, :side2, :side3
-<<<<<<< HEAD
-  
-=======
+
   @@all_sides = []
->>>>>>> c8f24d79b27da7f8a1874676459af0848514ca2c
+
   def initialize (side1,side2,side3)
   @side1 = side1
   @side2 = side2
   @side3 = side3 
-<<<<<<< HEAD
   @@all_sides = [side1,side2,side3]
-=======
+
   @@all_sides  << self
->>>>>>> c8f24d79b27da7f8a1874676459af0848514ca2c
-  end
+end
   
   def valid? 
     if(@@all_sides.none? {|side| side <= 0}) && (@side1 + @side2 > @side3) && (@side2 + @side3 > @side1) && (@side1 + @side3 > @side2)
